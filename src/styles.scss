@@ -1,0 +1,169 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import "~@angular/material/theming";
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$restaurant-primary: mat-palette($mat-indigo);
+$restaurant-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$restaurant-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$restaurant-theme: mat-light-theme($restaurant-primary, $restaurant-accent, $restaurant-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($restaurant-theme);
+
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: Nunito;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: #ef5181;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #ef5181;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #5a3741;
+}
+
+.service-layout {
+  margin-top: 40px;
+  text-align: center;
+  .title {
+    display: block;
+    h1 {
+      font-weight: 900;
+      font-size: 2.8rem;
+      color: #d50000;
+    }
+    small {
+      font-weight: 700;
+      color: #004983;
+    }
+  }
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  pointer-events: auto;
+  background-color: rgba(0, 0, 0, 0.7803921568627451);
+  background-clip: padding-box;
+  border: none !important;
+  border-radius: 0.3rem;
+  outline: 0;
+}
+
+.modal-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-bottom: none !important;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  .close {
+    color: white;
+    opacity: 1;
+  }
+}
+
+.modal-body {
+  padding: 30px;
+  color: white;
+}
+
+.primary-btn {
+  padding: 3px;
+  border-radius: 20px;
+  background: #00488300;
+  min-width: 80px;
+  text-align: center;
+  border: 1.5px solid #004983;
+  a {
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+  }
+}
+.primary-btn:hover {
+  // box-shadow: 0px 0px 2px 1px #2e5bff;
+  border: 0px !important;
+  cursor: pointer;
+  background: #004983;
+  a {
+    color: #fff;
+  }
+  a:hover{
+    color: #fff;
+  }
+}
+
+.card {
+  background: #ffffff;
+  box-shadow: 0px 3px 15px rgba(0, 73, 131, 0.12);
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  min-width: 300px;
+  min-height: 250px;
+  border: none;
+  align-items: center;
+  position: initial;
+  img {
+    width: 100px;
+    margin: 20px 0px 15px 0;
+  }
+  h4 {
+    font-weight: 700;
+    color: #004983;
+  }
+  p {
+    font-weight: 700;
+    font-size: 12px;
+  }
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 1px 4px 15px rgba(0, 73, 131, 0.26);
+}

@@ -1,0 +1,20 @@
+<div class="login-form">
+    <img src="/assets/images/user.svg" alt="login-icon">
+    <br>
+    <mat-form-field appearance="outline">
+        <mat-label>Username or Email</mat-label>
+        <input matInput placeholder="Placeholder">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+    </mat-form-field>
+
+  <div class="primary-btn">
+      <a>Login</a>
+  </div>
+</div>

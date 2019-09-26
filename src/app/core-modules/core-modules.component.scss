@@ -1,0 +1,40 @@
+.topBarWrap {
+  width: 100%;
+  //   overflow: hidden;
+  position: fixed;
+  top: 0;
+}
+
+.container {
+  max-width: -webkit-fill-available !important;
+}
+
+li a {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 25px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+li a:hover {
+  padding: 8px;
+  border-bottom: 1.5px solid #d50000;
+}
+
+.active {
+  .nav-link {
+    color: #d50000 !important;
+  }
+  border-bottom: 1.5px solid #d50000;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.dropdown-menu {
+  border: none !important;
+  background: white;
+  box-shadow: 3px 3px 6px -0.2px rgba(86, 86, 86, 0.3);
+}

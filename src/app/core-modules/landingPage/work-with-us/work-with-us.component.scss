@@ -1,0 +1,46 @@
+.service-layout {
+  background-image: url(/assets/images/bg.jpg);
+  background-repeat: repeat-y;
+  background-size: cover;
+  height: 95vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  .title {
+    padding-top: 50px;
+  }
+}
+
+
+.row {
+  justify-content: center;
+  margin: 0px !important;
+}
+
+.card {
+  width: 250px;
+  margin: 30px;
+  padding: 0px !important;
+  .card-content {
+    padding: 20px;
+    small {
+      font-weight: 700;
+      color: #004983;
+      font-size: 12px;
+    }
+    p{
+      padding: 5px;
+    }
+  }
+  img {
+    width: 100% !important;
+    margin: 0px !important;
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  .service-layout {
+    height: auto !important;
+  }
+}

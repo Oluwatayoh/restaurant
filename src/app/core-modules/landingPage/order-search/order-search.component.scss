@@ -1,0 +1,79 @@
+// .search-layout {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     margin-top: 60px;
+//   }
+
+.search-layout {
+  background-image: url(/assets/images/dish3.jpg);
+  background-repeat: repeat-y;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.search-wrap {
+  text-align: center;
+  padding-left: 70px;
+  h1 {
+    font-weight: 900;
+    font-size: 2.8rem;
+    color: #d50000;
+  }
+  small {
+    font-weight: 700;
+    color: #004983;
+  }
+}
+
+.search-bar {
+  background: white;
+  width: 100%;
+  padding: 11px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  box-shadow: 0px 0px 5px 0px #4b4b4b;
+  input {
+    outline: none !important;
+    border: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+  }
+  img {
+    margin-right: 10px;
+  }
+}
+
+.counter {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  h4 {
+    color: #d50000;
+    small {
+      font-weight: 700;
+      color: #004983;
+      font-size: 16px;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .search-wrap {
+    text-align: center;
+    // padding-left: 70px; */
+    padding: 20px !important;
+  }
+
+  .counter h4 small {
+    font-weight: 700;
+    color: #004983;
+    font-size: 14px;
+  }
+}

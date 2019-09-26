@@ -1,0 +1,55 @@
+<div class="footer-pg">
+    <div class="social">
+        <img src="/assets/images/facebook.svg" alt="fb">
+        <img src="/assets/images/twitter-sign.svg" alt="tw">
+        <img src="/assets/images/instagram.svg" alt="in">
+        <img src="/assets/images/linkedin-sign.svg" alt="lk">
+    </div>
+
+    <div class="company">
+        <h5>About</h5>
+        <p>Opening Hours: 8am <br>
+            Mon - Fri, 9am - 5pm</p>
+        <br>
+        <p class="ex">Login</p>
+        <p class="ex">Register</p>
+        <p class="ex">Restaurant</p>
+        <p class="ex">Basket</p>
+        <p class="ex">About Us</p>
+    </div>
+
+
+    <div class="company">
+        <h5>Newsletter</h5>
+        <p>Join our newsletter to keep be informed about offers and news.</p>
+        <br>
+        <mat-form-field appearance="outline">
+            <mat-label>Your Mail</mat-label>
+            <input matInput>
+        </mat-form-field>
+        <div class="primary-btn">
+            <a>Subscribe</a>
+        </div>
+    </div>
+
+    <div class="company setting">
+        <h5>Setting</h5>
+        <mat-form-field>
+            <mat-select [(value)]="selected">
+                <mat-option selected value="option1">English</mat-option>
+                <mat-option value="1">French</mat-option>
+                <mat-option value="2">Spanish</mat-option>
+                <mat-option value="3">Russian</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-select [(value)]="selected">
+                <mat-option selected value="option1">USD</mat-option>
+                <mat-option value="option2">EUR</mat-option>
+                <mat-option value="option3">GPB</mat-option>
+                <mat-option value="option3">RUB</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+</div>

@@ -1,0 +1,67 @@
+.footer-pg {
+  background: rgba(53, 163, 203, 0.12);
+  padding: 40px;
+  // margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  //   position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  img {
+    width: 30px;
+    margin-right: 30px;
+  }
+}
+
+.company {
+  padding: 15px;
+  h5 {
+    font-weight: bolder;
+    font-size: 15px;
+  }
+  p {
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0px !important;
+    color: #667595;
+    line-height: 2;
+    cursor: pointer;
+  }
+  .ex:hover {
+    border-bottom: 1.2px solid #667595;
+    width: fit-content;
+  }
+
+  .primary-btn {
+    width: fit-content !important;
+  }
+}
+
+::ng-deep {
+  .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: #004983 !important;
+  }
+  mat-form-field {
+    .mat-hint,
+    input,
+    ::placeholder,
+    .mat-form-field-label {
+      color: #004983;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .footer-pg {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

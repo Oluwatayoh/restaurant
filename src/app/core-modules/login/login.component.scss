@@ -1,0 +1,30 @@
+mat-form-field {
+  color: #fff !important;
+  width: 100%;
+}
+
+::ng-deep {
+  .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: white;
+  }
+  mat-form-field {
+    .mat-hint,
+    input,
+    ::placeholder,
+    .mat-form-field-label {
+      color: white;
+    }
+  }
+}
+
+.login-form {
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 100px;
+  }
+}
