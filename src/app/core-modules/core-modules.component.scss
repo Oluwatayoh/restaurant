@@ -9,11 +9,29 @@
   max-width: -webkit-fill-available !important;
 }
 
+#bg-white {
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.navbar {
+  background: transparent !important;
+  transition: 0.5s;
+}
+
+.navbar.scrolled {
+  background: #000 !important;
+  transition: 0.5s;
+}
+
+.nav-link {
+  color: rgb(0, 0, 0) !important;
+}
+
 li a {
   font-family: Nunito;
   font-style: normal;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 25px;
   margin-right: 12px;
   cursor: pointer;
