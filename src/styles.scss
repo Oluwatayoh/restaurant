@@ -167,6 +167,10 @@ body {
     color: #fff;
   }
 }
+h1, .nav-link {
+  font-family: "Segoe UI" !important;
+}
+
 
 .card {
   background: #ffffff;
@@ -179,13 +183,20 @@ body {
   border: none;
   align-items: center;
   position: initial;
-  img {
-    width: 100px;
-    margin: 20px 0px 15px 0;
+
+  i{
+    font-size: 80px;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
+  // img {
+  //   width: 100px;
+  //   margin: 20px 0px 15px 0;
+  // }
   h4 {
     font-weight: 700;
     color: #004983;
+    font-family: "Segoe UI" !important;
   }
   p {
     font-weight: 700;
