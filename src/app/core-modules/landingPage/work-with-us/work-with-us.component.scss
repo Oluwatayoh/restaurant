@@ -8,7 +8,6 @@
   align-items: center;
 }
 
-
 .row {
   justify-content: center;
   margin: 0px !important;
@@ -25,8 +24,10 @@
       color: #004983;
       font-size: 12px;
     }
-    p{
+    p {
       padding: 5px;
+      color: #004983;
+      font-weight: 500;
     }
   }
   img {
@@ -34,7 +35,6 @@
     margin: 0px !important;
   }
 }
-
 
 @media only screen and (max-width: 900px) {
   .service-layout {
