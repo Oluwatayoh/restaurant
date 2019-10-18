@@ -5,6 +5,10 @@
   top: 0;
 }
 
+.navbar {
+  height: 35px;
+}
+
 .container {
   max-width: -webkit-fill-available !important;
 }
@@ -28,10 +32,10 @@
 }
 
 li a {
-  font-family: Nunito;
+  font-family: Nunito !important;
   font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
+  font-weight: normal;
+  font-size: 13px;
   line-height: 25px;
   margin-right: 12px;
   cursor: pointer;
@@ -55,4 +59,10 @@ li a:hover {
   border: none !important;
   background: white;
   box-shadow: 3px 3px 6px -0.2px rgba(86, 86, 86, 0.3);
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar {
+    height: auto !important;
+  }
 }
